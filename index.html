@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katik Segitiga</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Selamat Datang di Katik Segitiga</h1>
+    <p>
+      Sebuah web sederhana untuk menghitung luas dan keliling bangun datar
+      segitiga
+    </p>
+    <img
+      class="gambarSegitigaSamaSisi"
+      src="assets/segitigaSamaSisi.png"
+      alt="gambarSegitiga"
+    />
+
+    <div class="buttonContainer">
+      <button onclick="alert('Pilihan 1 dipilih')">Pilihan 1</button>
+      <button onclick="alert('Pilihan 2 dipilih')">Pilihan 2</button>
+    </div>
+    <div class="luasSegitiga">
+      <h2>Luas Segitiga</h2>
+      <label for="alas">Masukkan nilai alas : </label>
+      <input type="number" name="alas" id="alas" />
+      <label for="tinggi">Masukkan nilai tinggi : </label>
+      <input type="number" name="tinggi" id="tinggi" />
+      <button>Hitung </button>
+    </div>
+    <div class="kelilingSegitiga hide">
+      <h2>Keliling Segitiga</h2>
+      <label for="sisi">Masukkan nilai sisi : </label>
+      <input type="number" name="sisi" id="sisi" />
+      <button>Hitung </button>
+    </div>
+  </body>
+</html>
