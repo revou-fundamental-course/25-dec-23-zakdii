@@ -19,8 +19,8 @@
     />
 
     <div class="buttonContainer">
-      <button onclick="alert('Pilihan 1 dipilih')">Pilihan 1</button>
-      <button onclick="alert('Pilihan 2 dipilih')">Pilihan 2</button>
+      <button onclick="showLuasSegitiga()">Luas Segitiga</button>
+      <button onclick="showKelilingSegitiga()">Keliling Segitiga</button>
     </div>
     <div class="luasSegitiga">
       <h2>Luas Segitiga</h2>
@@ -28,13 +28,34 @@
       <input type="number" name="alas" id="alas" />
       <label for="tinggi">Masukkan nilai tinggi : </label>
       <input type="number" name="tinggi" id="tinggi" />
-      <button>Hitung </button>
+      <div class="buttonContainer">
+        <button value="hitung" onclick="hitungLuas()">Hitung</button>
+        <button value="reset" onclick="resetLuas()">Reset</button>
+      </div>
+      <p id="luasResult"></p>
     </div>
-    <div class="kelilingSegitiga hide">
+    <div class="kelilingSegitiga">
       <h2>Keliling Segitiga</h2>
-      <label for="sisi">Masukkan nilai sisi : </label>
-      <input type="number" name="sisi" id="sisi" />
-      <button>Hitung </button>
+      <label for="s1">Masukkan nilai sisi pertama : </label>
+      <input type="number" name="s1" id="s1" />
+      <label for="s2">Masukkan nilai sisi kedua : </label>
+      <input type="number" name="s2" id="s2" />
+      <label for="s3">Masukkan nilai sisi pertama : </label>
+      <input type="number" name="s3" id="s3" />
+      <div class="buttonContainer">
+        <button value="hitung" onclick="hitungKeliling()">Hitung</button>
+        <button value="reset" onclick="resetKeliling()">Reset</button>
+      </div>
+      <p id="kelilingResult"></p>
     </div>
+
+    <div class="overlay" id="alertOverlay">
+      <div class="popup">
+        <p id="alertMessage"></p>
+        <button class="close-btn" onclick="hideAlert()">OK</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
