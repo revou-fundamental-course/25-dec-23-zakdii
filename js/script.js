@@ -49,17 +49,6 @@ function resetKeliling() {
   toggleButtons(false);
 }
 
-function toggleButtons(isHitung) {
-  document.querySelector('.luasSegitiga button[value="hitung"]').disabled =
-    isHitung;
-  document.querySelector('.kelilingSegitiga button[value="hitung"]').disabled =
-    isHitung;
-  document.querySelector('.luasSegitiga button[value="reset"]').disabled =
-    !isHitung;
-  document.querySelector('.kelilingSegitiga button[value="reset"]').disabled =
-    !isHitung;
-}
-
 function showAlert(message) {
   document.getElementById("alertMessage").innerText = message;
   document.getElementById("alertOverlay").style.display = "flex";
